@@ -1,0 +1,12 @@
+create database pessoa;
+
+create table cliente(
+
+id int auto_increment primary key not null,
+nome varchar(50) not null,
+cpf varchar(20) not null,
+numero varchar(15) not null,
+profissao varchar(50) not null,
+ide varchar(40) not null
+
+);

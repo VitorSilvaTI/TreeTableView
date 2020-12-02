@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="484.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainScreenController">
+    <children>
+        <JFXButton layoutX="547.0" layoutY="395.0" onAction="#showTable" prefHeight="44.0" prefWidth="115.0" style="-fx-background-color: gray;" text="chamar tabela" />
+        <JFXButton layoutX="469.0" layoutY="395.0" onAction="#saveInformationClients" prefHeight="44.0" prefWidth="68.0" style="-fx-background-color: gray;" text="salvar" />
+        <JFXTextField fx:id="tfName" focusColor="BLACK" labelFloat="true" layoutX="30.0" layoutY="42.0" promptText="Nome" />
+        <JFXTextField fx:id="tfIde" focusColor="BLACK" labelFloat="true" layoutX="201.0" layoutY="129.0" promptText="IDE" />
+        <JFXTextField fx:id="tfProfession" focusColor="BLACK" labelFloat="true" layoutX="30.0" layoutY="129.0" promptText="Profissão" />
+        <JFXTextField fx:id="tfNumber" focusColor="BLACK" labelFloat="true" layoutX="402.0" layoutY="42.0" promptText="Numero" />
+        <JFXTextField fx:id="tfCpf" focusColor="BLACK" labelFloat="true" layoutX="208.0" layoutY="42.0" promptText="CPF" />
+    </children>
+</AnchorPane>
