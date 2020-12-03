@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXTextField?>
 <?import com.jfoenix.controls.JFXTreeTableView?>
 <?import javafx.scene.control.TreeTableColumn?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="470.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TreeTableViewScreenController">
+<AnchorPane prefHeight="512.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TreeTableViewScreenController">
     <children>
-        <JFXTreeTableView fx:id="tbTreeView" layoutY="-3.0" prefHeight="470.0" prefWidth="752.0">
+        <JFXTreeTableView fx:id="tbTreeView" layoutX="13.0" layoutY="68.0" prefHeight="430.0" prefWidth="770.0">
             <columns>
                 <TreeTableColumn fx:id="coId" prefWidth="85.0" text="ID" />
                 <TreeTableColumn fx:id="coName" prefWidth="128.0" text="Nome" />
                 <TreeTableColumn fx:id="coCpf" minWidth="5.0" prefWidth="136.0" text="CPF" />
                 <TreeTableColumn fx:id="coNumber" prefWidth="139.0" text="Numero" />
                 <TreeTableColumn fx:id="coProfession" prefWidth="141.0" text="profissão" />
-                <TreeTableColumn fx:id="coIde" prefWidth="127.0" text="IDE" />
+                <TreeTableColumn fx:id="coIde" prefWidth="140.0" text="IDE" />
             </columns>
         </JFXTreeTableView>
+      <JFXTextField fx:id="tfSearch" focusColor="BLACK" labelFloat="true" layoutX="294.0" layoutY="23.0" promptText="Pesquisa">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
     </children>
 </AnchorPane>

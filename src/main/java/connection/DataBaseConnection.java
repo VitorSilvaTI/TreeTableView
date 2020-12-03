@@ -12,7 +12,6 @@ public class DataBaseConnection {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/pessoa?useTimezone=true&serverTimezone=UTC", "root", "");
-            System.out.println("connect");
         } catch (ClassNotFoundException classNotFoundException) {
             classNotFoundException.printStackTrace();
         } catch (SQLException sqlException) {
@@ -23,7 +22,6 @@ public class DataBaseConnection {
     public void disconnect(){
         try {
             connection.close();
-            System.out.println("disconnect");
         } catch (SQLException sqlException) {
             sqlException.printStackTrace();
         }

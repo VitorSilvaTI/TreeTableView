@@ -37,7 +37,7 @@ public class ClientDao {
         List<ClientBeans> listClients =  new ArrayList<>();
         connectionClient.connect();
         try {
-            PreparedStatement pst = connectionClient.connection.prepareStatement("select * from cliente");
+            PreparedStatement pst = connectionClient.connection.prepareStatement("select * from cliente order by id;");
             ResultSet rs = pst.executeQuery();
             while(rs.next()){
                 ClientBeans clientBeans =  new ClientBeans();
